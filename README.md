@@ -1,2 +1,2 @@
 # omri.chiel
-web course, exercise 1
+Omri Chiel
