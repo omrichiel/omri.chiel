@@ -1,0 +1,90 @@
+﻿body {
+    background-image: url("wallpaper.jpg");
+    
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 50px
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+}
+
+.about-me {
+    height: 50px;
+    border: 2px solid;
+    padding-inline: 10px;
+}
+
+.education {
+    height: 50px;
+    border: 2px solid;
+    padding-inline: 10px;
+}
+
+.professional-experience {
+    height: 50px;
+    border: 2px solid;
+    padding-inline: 10px;
+}
+
+.skills {
+    height: 50px;
+    border: 2px solid;
+    padding-inline: 10px;
+}
+
+.volunteering {
+    height: 50px;
+    border: 2px solid;
+    padding-inline: 10px;
+}
+
+.about-me:hover {
+    border-color: red;
+}
+
+.education:hover {
+    border-color: red;
+}
+
+.professional-experience:hover {
+    border-color: red;
+}
+
+.skills:hover {
+    border-color: red;
+}
+
+.volunteering:hover {
+    border-color: red;
+}
+
+.contact {
+    width: 500px;
+    border: 2px solid;
+    padding-inline: 10px;
+    background-color: blanchedalmond;
+}
+
+input {
+    border: 1px solid;
+    padding: 2px;
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    border: 1px solid;
+    padding: 2px;
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
