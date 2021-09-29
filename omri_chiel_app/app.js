@@ -9,6 +9,18 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+//route to CV
+app.get("/CV", (req, res) =>{
+  res.sendFile(path.join(__dirname, "./views/CV.html"));
+});
+
+//route to myFirstHtml
+app.get("/myFirstHtml", (req, res) =>{
+  res.sendFile(path.join(__dirname, "./views/myFirstHtml.html"));
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -36,6 +48,11 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+// set port, listen for requests
+app.listen(3000, () => {
+  console.log("Server is running on port 3000.");
 });
 
 module.exports = app;
